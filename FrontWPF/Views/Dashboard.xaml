@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="DataGrid.Views.Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataGrid.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="450"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel  Grid.Row="1" Grid.Column="2">
+            <Border Height="100" CornerRadius="10" Background="#623ED0" Margin="5 50">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="Cao Tú Anh : Nhóm Trưởng"/>
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="195501003"/>
+                </StackPanel>
+            </Border>
+            <Border Height="100"  CornerRadius="10" Background="#0d6efd">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="Phan Gia Thiện"/>
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="1955010199"/>
+                </StackPanel>
+            </Border>
+            <Border Height="100" CornerRadius="10" Background="#198754" Margin="5 50">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="Phùng Minh Quang"/>
+                    <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="1855010138"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <Border Grid.ColumnSpan="2" Grid.Row="0" CornerRadius="0 50 0 50" Background="#ffc107" Margin="0 0 0 40">
+            <TextBlock Style="{StaticResource tbDashBoard}" Foreground="Black" HorizontalAlignment="Center" Text="Ngôn ngữ C# và công nghệ .NET"/>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="2" CornerRadius="0 50 0 50" Background="#0dcaf0" Margin="0 60 0 0">
+            <TextBlock Style="{StaticResource tbDashBoard}" HorizontalAlignment="Center" Text="ThS. Nguyễn Thị Nguyệt"/>
+        </Border>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Image Width="500">
+                <Image.Source>
+                    <BitmapImage UriSource="/Images/bieudo.png" />
+                </Image.Source>
+            </Image>
+        </StackPanel>
+    </Grid>
+</UserControl>
